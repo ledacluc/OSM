@@ -6,8 +6,8 @@ const userSchema = new mongoose.Schema(
         password: { type: String, required },
         isAdmin: { type: Boolean, default: false, required: true }, // check quyền 
         phone: { type: Number, required: true },
-        access_token: { type: String, require: true },
-        refresh_token: { type: String, require: true },
+        access_token: { type: String, require: true },  // mã truy cập 
+        refresh_token: { type: String, require: true }, // mã làm mới
     },
     {
         timestamps: true // thời gian create và update 
